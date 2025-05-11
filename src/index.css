@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* index.css or main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.my-gradient-btn {
+  background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+}
+
+.my-gradient-bg {
+  background: linear-gradient(to bottom right, #c084fc, #93c5fd, #f9a8d4);
+}
+
+
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #b3cbf5;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #93c5fd;
+    border-radius: 5px;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #93c5fd #b3cbf5;
+  }
+}
